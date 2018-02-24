@@ -61,6 +61,10 @@ app.get('/bad', (req, res) => {
 })
 
 
-app.listen(port, process.env.IP || 'localhost', () => {
+// app.listen(port, process.env.IP || 'localhost', () => {
+//     console.log(`App has started again on port ${port}`);
+// });
+
+app.listen(port, () => {
     console.log(`App has started again on port ${port}`);
 });
